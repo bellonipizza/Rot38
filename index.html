@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roteiro de Roteiro 3.8e · Premium Edition — RomanBRuni</title>
+<meta name="description" content="O método completo de RomanBRuni para transformar uma ideia em roteiro de cinema, séries e animação: uma página por minuto, fórmula de Hollywood, método de fichas e kit de venda.">
+<meta property="og:title" content="Roteiro de Roteiro 3.8e · Premium Edition">
+<meta property="og:description" content="Da ideia solta ao roteiro de 90 páginas pronto para apresentar ao mercado.">
+<meta property="og:image" content="assets/01-capa.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Caveat:wght@400&family=Courier+Prime:wght@400;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+@font-face{
+  font-family:"Blanka";
+  src:url("assets/Blanka-Regular.woff2") format("woff2"),
+      url("assets/Blanka-Regular.otf") format("opentype");
+  font-weight:400;font-style:normal;font-display:swap;
+}
+@font-face{
+  font-family:"Special Elite";
+  src:url("assets/SpecialElite.ttf") format("truetype");
+  font-display:swap;
+}
+:root{
+  --preto:#0B0A08;
+  --preto-2:#15130F;
+  --preto-3:#1F1C17;
+  --dourado:#F5B721;
+  --vermelho:#E8442A;
+  --creme:#F6F1E4;
+  --creme-2:#CFC8B8;
+  --creme-3:#8E877A;
+  --linha:rgba(246,241,228,.14);
+  --titulo:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --texto:"Newsreader", Georgia, "Times New Roman", serif;
+  --roteiro:"Courier Prime", "Courier New", Courier, monospace;
+  --maquina:"Special Elite", "Courier Prime", "Courier New", monospace;
+  --largura:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--preto);color:var(--creme);
+  font-family:var(--texto);font-size:1.15rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--dourado)}
+:focus-visible{outline:3px solid var(--dourado);outline-offset:3px}
+.wrap{max-width:var(--largura);margin:0 auto;padding:0 24px}
+.estreito{max-width:760px}
+
+/* etiqueta em fonte de roteiro */
+.etiqueta{
+  font-family:var(--roteiro);font-size:.95rem;color:var(--dourado);
+  margin:0 0 14px;letter-spacing:.02em;
+}
+h1,h2,h3{font-family:var(--titulo);line-height:1.08;margin:0}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;letter-spacing:-.02em}
+h2 .linha2{display:block;color:var(--creme-2);font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0 0 1em}
+
+/* botões */
+.btn{
+  display:inline-flex;align-items:center;gap:.5em;
+  font-family:var(--titulo);font-weight:800;font-size:1.1rem;
+  background:var(--dourado);color:var(--preto);text-decoration:none;
+  padding:18px 30px;border-radius:4px;border:2px solid var(--dourado);
+  transition:background .15s, color .15s;
+}
+.btn:hover{background:transparent;color:var(--dourado)}
+.btn-pequeno{padding:10px 18px;font-size:.95rem}
+.selos{
+  display:flex;flex-wrap:wrap;gap:8px 22px;margin:18px 0 0;padding:0;list-style:none;
+  font-family:var(--roteiro);font-size:.9rem;color:var(--creme-2);
+}
+.selos li::before{content:"✓ ";color:var(--dourado)}
+
+section{padding:96px 0;border-top:1px solid var(--linha)}
+
+/* barra do topo */
+.topo{
+  position:sticky;top:0;z-index:20;background:rgba(11,10,8,.92);
+  backdrop-filter:blur(6px);border-bottom:1px solid var(--linha);
+}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{font-family:var(--titulo);font-weight:800;color:var(--creme);text-decoration:none;font-size:1.05rem}
+.marca span{color:var(--dourado)}
+
+/* 1. abertura */
+.abertura{border-top:0;padding:72px 0 96px}
+.abertura .grade{display:grid;grid-template-columns:1.16fr .84fr;gap:44px;align-items:start}
+/* título no desenho da capa do livro */
+.lockup{
+  position:relative;display:inline-block;margin:0 0 26px;
+  font-size:clamp(46px,8.4vw,92px);color:var(--creme);line-height:1;
+}
+.lockup > span{display:block;position:relative;z-index:1}
+.lockup .l-topo{white-space:nowrap}
+.lockup .l-primeiro{
+  display:inline;font-family:Arial, Helvetica, sans-serif;font-style:italic;font-weight:700;
+  letter-spacing:-.065em;line-height:.92;
+}
+.lockup .l-de{
+  display:inline;margin-left:.1em;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  font-weight:300;font-size:.46em;letter-spacing:-.04em;color:var(--creme-2);
+}
+.lockup .l-segundo{
+  font-family:"Blanka",var(--titulo);font-weight:400;font-size:1.02em;
+  line-height:.9;letter-spacing:-.02em;white-space:nowrap;margin-top:.02em;
+}
+.lockup .l-autor{
+  font-family:"Times New Roman",Times,serif;font-style:italic;font-weight:700;
+  font-size:.6em;letter-spacing:-.03em;white-space:nowrap;margin-top:.12em;color:var(--creme)
+}
+.lockup .l-edicao{
+  position:absolute;z-index:0;left:78%;top:-.22em;white-space:nowrap;
+  display:flex;align-items:flex-end;pointer-events:none;
+}
+.lockup .l-numero{
+  font-family:"Caveat","Segoe Print",cursive;font-weight:400;font-size:2.1em;
+  line-height:.8;letter-spacing:-.1em;color:rgba(245,183,33,.34);transform:rotate(-3deg);
+}
+.lockup .l-ebook{
+  font-family:Arial, Helvetica, sans-serif;font-size:.2em;letter-spacing:.22em;
+  color:var(--creme-2);margin:0 0 .5em .5em;
+}
+.edicao-linha{
+  font-family:var(--roteiro);font-weight:700;font-size:1.05rem;letter-spacing:.04em;
+  color:var(--dourado);margin:-8px 0 26px;
+}
+.com{font-family:var(--roteiro);color:var(--creme-2);margin:0 0 28px}
+.com strong{color:var(--creme)}
+.promessa{font-family:var(--titulo);font-weight:600;font-size:clamp(1.05rem,1.45vw,1.14rem);line-height:1.5;margin:0 0 24px;color:var(--creme)}
+.promessa em{font-style:normal;color:var(--dourado)}
+.abertura .corpo p{color:var(--creme-2)}
+.nota{
+  border-left:3px solid var(--vermelho);padding:6px 0 6px 18px;margin:26px 0 30px;
+  font-style:italic;color:var(--creme)
+}
+
+/* painel animado */
+.painel{
+  background:var(--preto-2);border:1px solid var(--linha);border-radius:6px;
+  overflow:hidden;position:sticky;top:96px;
+}
+.painel-cab{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 20px;border-bottom:1px dashed var(--linha);
+  font-family:var(--maquina);font-size:.95rem;color:var(--creme-2);
+}
+.painel-cab .rec{display:inline-flex;align-items:center;gap:8px;color:var(--vermelho)}
+.painel-cab .rec::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--vermelho)}
+.takes{position:relative;min-height:420px}
+.take{position:absolute;inset:0;padding:26px 26px 20px;opacity:0;transition:opacity .8s ease;visibility:hidden}
+.take.ativo{opacity:1;visibility:visible}
+.take-rotulo{display:flex;align-items:center;gap:10px;font-family:var(--roteiro);font-size:.92rem;margin-bottom:18px}
+.marca-x,.marca-ex{
+  width:26px;height:26px;border-radius:50%;display:inline-grid;place-items:center;
+  font-family:var(--titulo);font-weight:900;font-size:.9rem;
+}
+.marca-x{background:var(--vermelho);color:var(--preto)}
+.marca-ex{background:var(--dourado);color:var(--preto)}
+.take-rotulo b{color:var(--creme)}
+.take-rotulo span.tipo{color:var(--creme-3)}
+.texto-maquina{font-family:var(--maquina);font-size:1.02rem;line-height:1.6;color:var(--creme);margin:0 0 18px}
+.texto-maquina.lit{font-size:1.15rem}
+.cena p{margin:0 0 .75em}
+.cena .cab{font-weight:700;color:var(--dourado)}
+.cena .det{color:var(--creme-2)}
+.take-leg{font-family:var(--texto);font-style:italic;font-size:1rem;color:var(--creme-3);margin:0}
+.painel-rodape{
+  padding:12px 20px;border-top:1px dashed var(--linha);
+  font-family:var(--roteiro);font-size:.85rem;color:var(--creme-3);
+  display:flex;justify-content:space-between;
+}
+.barra-tempo{height:3px;background:var(--preto-3)}
+.barra-tempo i{display:block;height:100%;width:0;background:var(--dourado)}
+@media (prefers-reduced-motion: reduce){
+  .painel{position:static}
+  .takes{min-height:0}
+  .take{position:static;opacity:1;visibility:visible;transition:none}
+  .take + .take{border-top:1px dashed var(--linha)}
+  .barra-tempo{display:none}
+}
+
+/* 2. dor */
+.dor-lista{list-style:none;padding:0;margin:40px 0;display:grid;gap:18px}
+.dor-lista li{
+  display:grid;grid-template-columns:34px 1fr;gap:14px;align-items:start;
+  padding:18px 0;border-bottom:1px solid var(--linha);color:var(--creme-2)
+}
+.dor-lista li::before{
+  content:"✕";width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  background:rgba(232,68,42,.15);color:var(--vermelho);font-family:var(--titulo);font-weight:800;font-size:.85rem;margin-top:3px
+}
+.dor-lista strong{color:var(--creme);font-weight:500}
+.dor-lista .citacao{display:block;font-style:italic;color:var(--creme);margin-bottom:4px}
+.fecho{font-size:1.2rem;color:var(--creme)}
+
+/* 3. o que você leva */
+.parte{margin-top:64px}
+.parte-cab{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:baseline;margin-bottom:26px}
+.parte-cab .num{font-family:var(--roteiro);color:var(--dourado);font-size:1rem}
+.parte-cab h3{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:800}
+.parte-cab p{grid-column:2;color:var(--creme-2);margin:10px 0 0}
+.itens{
+  list-style:none;margin:0;padding:0;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px;
+  margin-left:232px;
+}
+.itens li{padding:18px 0;border-top:1px solid var(--linha)}
+.itens h4{font-family:var(--titulo);font-weight:700;font-size:1.08rem;margin:0 0 4px}
+.itens h4 .n{font-family:var(--roteiro);color:var(--dourado);font-weight:700;margin-right:8px}
+.itens p{margin:0;color:var(--creme-2);font-size:1.02rem;line-height:1.55}
+.itens .pg{font-family:var(--roteiro);font-size:.82rem;color:var(--creme-3);display:block;margin-top:6px}
+.cta-linha{margin-top:56px;display:flex;flex-wrap:wrap;align-items:center;gap:18px}
+.cta-linha small{font-family:var(--roteiro);color:var(--creme-3);font-size:.9rem}
+
+/* 4. por dentro */
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px;margin-top:48px}
+.galeria figure{margin:0}
+.galeria figure:first-child{grid-column:span 2;grid-row:span 2}
+.galeria img,.falta-img{
+  width:100%;border-radius:4px;border:1px solid var(--linha);background:var(--preto-2)
+}
+.galeria figure:not(:first-child) img{aspect-ratio:2/3;object-fit:contain}
+.galeria a{display:block;border-radius:4px}
+.galeria a:hover img{border-color:var(--dourado)}
+/* sumário na seção 3 */
+.sumario{display:grid;grid-template-columns:200px 1fr;gap:32px;margin-top:48px;align-items:start}
+.sumario .num{font-family:var(--roteiro);color:var(--dourado);font-size:1rem}
+.sumario-imgs{display:grid;grid-template-columns:repeat(2,minmax(0,300px));gap:22px}
+.sumario figure{margin:0}
+.sumario img{width:100%;border-radius:4px;border:1px solid var(--linha)}
+.sumario figcaption{font-family:var(--roteiro);font-size:.86rem;color:var(--creme-2);margin-top:10px}
+.sumario figcaption b{color:var(--dourado)}
+.galeria figcaption{font-family:var(--roteiro);font-size:.86rem;color:var(--creme-2);margin-top:10px;line-height:1.45}
+.galeria figcaption b{color:var(--dourado);font-weight:700}
+.falta-img{
+  aspect-ratio:3/4;display:grid;place-items:center;text-align:center;padding:18px;
+  font-family:var(--roteiro);font-size:.82rem;color:var(--creme-3);border-style:dashed
+}
+.galeria figure:not(:first-child) .falta-img{aspect-ratio:2/3}
+
+/* 6. para quem é */
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.coluna{padding:34px;border-radius:6px;border:1px solid var(--linha)}
+.coluna.sim{background:var(--preto-2);border-color:rgba(245,183,33,.35)}
+.coluna h3{margin-bottom:20px}
+.coluna ul{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.coluna li{display:grid;grid-template-columns:24px 1fr;gap:10px;color:var(--creme-2);font-size:1.05rem;line-height:1.5}
+.coluna.sim li::before{content:"✓";color:var(--dourado);font-family:var(--titulo);font-weight:800}
+.coluna.nao li::before{content:"✕";color:var(--vermelho);font-family:var(--titulo);font-weight:800}
+.coluna.nao a{color:var(--creme);text-decoration-color:var(--dourado)}
+.link-livro{white-space:nowrap}
+
+/* 7. oferta */
+.oferta .grade{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}
+.caixa-preco{
+  background:var(--creme);color:var(--preto);border-radius:6px;padding:44px;
+}
+.caixa-preco .etiqueta{color:#7A5B00}
+.preco{font-family:var(--titulo);font-weight:900;font-size:clamp(4rem,9vw,6rem);line-height:1;letter-spacing:-.04em;margin:6px 0 6px}
+.preco-sub{font-family:var(--roteiro);font-size:.95rem;color:#4b463d;margin-bottom:28px}
+.incluso{list-style:none;padding:0;margin:0 0 32px;display:grid;gap:10px}
+.incluso li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:1.05rem;line-height:1.45}
+.incluso li::before{content:"✓";font-family:var(--titulo);font-weight:800;color:#B07F00}
+.caixa-preco .btn{background:var(--preto);color:var(--creme);border-color:var(--preto)}
+.caixa-preco .btn:hover{background:transparent;color:var(--preto)}
+.caixa-preco .selos{color:#4b463d}
+.caixa-preco .selos li::before{color:#B07F00}
+.garantia{
+  border:1px solid var(--linha);border-radius:6px;padding:44px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.selo-garantia{
+  width:118px;height:118px;border-radius:50%;border:2px dashed var(--dourado);
+  display:grid;place-items:center;text-align:center;margin-bottom:26px;
+  font-family:var(--titulo);font-weight:900;line-height:1;color:var(--dourado)
+}
+.selo-garantia b{font-size:2.6rem;display:block}
+.selo-garantia small{font-family:var(--roteiro);font-weight:400;font-size:.8rem;color:var(--creme-2)}
+.garantia p{color:var(--creme-2)}
+.garantia strong{color:var(--creme)}
+
+/* 8. faq */
+.faq{margin-top:40px;border-top:1px solid var(--linha)}
+.faq details{border-bottom:1px solid var(--linha)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:24px 44px 24px 0;position:relative;
+  font-family:var(--titulo);font-weight:700;font-size:1.15rem;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  font-family:var(--roteiro);font-size:1.5rem;color:var(--dourado)
+}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--creme-2);padding:0 0 24px;margin:0;max-width:680px}
+
+/* 9. autor */
+.autor .grade{display:grid;grid-template-columns:250px 1fr;gap:48px;align-items:start}
+.autor figure{margin:0}
+.autor figure img,.autor .falta-img{border-radius:6px;border:1px solid var(--linha);aspect-ratio:3/4;object-fit:cover;width:100%}
+.autor figcaption{font-family:var(--roteiro);font-size:.88rem;color:var(--creme-3);margin-top:10px}
+.autor .sub{font-family:var(--roteiro);color:var(--dourado);margin:14px 0 26px}
+.autor .corpo p{color:var(--creme-2);font-size:1.05rem}
+.autor .corpo em{color:var(--creme)}
+.site{font-family:var(--roteiro);display:inline-block;margin:6px 0 28px}
+
+/* 10. chamada final */
+.final{text-align:center;padding:120px 0}
+.final h2{max-width:1000px;margin:0 auto 22px;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.15}
+.final p{color:var(--creme-2);max-width:680px;margin:0 auto 34px}
+.final .selos{justify-content:center}
+
+/* rodapé */
+footer{border-top:1px solid var(--linha);padding:64px 0 120px;text-align:center}
+footer blockquote{
+  font-family:var(--maquina);font-size:1.25rem;line-height:1.5;max-width:640px;margin:0 auto 26px;color:var(--creme)
+}
+footer .areas{font-family:var(--roteiro);font-size:.88rem;color:var(--creme-3);margin-bottom:22px}
+footer a{font-family:var(--roteiro);font-size:.95rem}
+
+/* barra fixa celular */
+.barra-celular{
+  display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;
+  background:var(--preto-2);border-top:1px solid var(--linha);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  align-items:center;justify-content:space-between;gap:12px;
+}
+.barra-celular span{font-family:var(--titulo);font-weight:700;font-size:.95rem;line-height:1.2}
+
+/* responsivo */
+@media (max-width: 960px){
+  .abertura .grade,.oferta .grade,.autor .grade{grid-template-columns:1fr}
+  .painel{position:static}
+  .parte-cab{grid-template-columns:1fr;gap:6px}
+  .parte-cab p{grid-column:1}
+  .itens{margin-left:0}
+  .sumario{grid-template-columns:1fr;gap:10px}
+  .autor figure{max-width:320px}
+}
+@media (max-width: 700px){
+  body{font-size:1.08rem}
+  .lockup{font-size:clamp(44px,15.5vw,68px);margin-top:.3em}
+  .lockup .l-edicao{left:66%;top:-.5em}
+  section{padding:72px 0}
+  .itens{grid-template-columns:1fr}
+  .duas{grid-template-columns:1fr}
+  .galeria{grid-template-columns:1fr 1fr}
+  .galeria figure:first-child{grid-column:span 2;grid-row:auto}
+  .sumario-imgs{grid-template-columns:1fr 1fr}
+  .caixa-preco,.garantia,.coluna{padding:28px}
+  .topo .btn{display:none}
+  .barra-celular{display:flex}
+  .takes{min-height:470px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     CHECKOUT: https://pay.hotmart.com/r3241273r
+     São 7 botões de compra, todos com a classe "js-checkout".
+     ============================================================ -->
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="https://www.romanbruni.net">RomanBRuni<span>.net</span></a>
+    <a class="btn btn-pequeno js-checkout" href="https://pay.hotmart.com/r3241273r">Quero o e-book →</a>
+  </div>
+</header>
+
+<main>
+
+<!-- 1. ABERTURA -->
+<section class="abertura">
+  <div class="wrap grade">
+    <div class="corpo">
+      <p class="etiqueta">E-book · Método completo de roteiro</p>
+      <h1 class="lockup" aria-label="Roteiro de Roteiro 3.8 ebook, de Roman BRuni">
+        <span class="l-topo" aria-hidden="true"><span class="l-primeiro">Roteiro</span><span class="l-de">de</span></span>
+        <span class="l-segundo" aria-hidden="true">ROTEIRO</span>
+        <span class="l-autor" aria-hidden="true">Roman BRuni</span>
+        <span class="l-edicao" aria-hidden="true"><span class="l-numero">3.8</span><span class="l-ebook">ebook</span></span>
+      </h1>
+      <p class="edicao-linha">Premium Edition · versão 3.8e</p>
+
+      <p class="promessa">É muito difícil escrever um roteiro de 90 páginas de uma vez,<br>
+      em parte porque você vai fazer várias revisões para melhorar,<br>
+      e em parte porque fica mais fácil escrever em sequências e em cenas,<br>
+      para depois utilizar um método para montar o roteiro completo.</p>
+
+      <p>Todo roteirista já teve uma história inteira na cabeça e uma página em branco na frente.
+      A dificuldade não é falta de ideia. É não ter um mapa que diga o que escrever primeiro,
+      o que precisa acontecer em cada ponto do filme e como transformar frases soltas
+      em páginas que um diretor consegue filmar.</p>
+      <p>"Roteiro de Roteiro" revela a engenharia de roteiro:<br>
+      o mapa do processo narrativo com medidas, proporções e durações,<br>
+      que leva a ideia do primeiro parágrafo do romance/outline<br>
+      ao kit criativo que você apresenta a um produtor.</p>
+
+      <p class="nota">Uma página de roteiro equivale a um minuto de tela. Um longa de 90 minutos
+      são 90 páginas — e cada uma delas é um problema pequeno, que tem solução simples.</p>
+
+      <a class="btn js-checkout" href="https://pay.hotmart.com/r3241273r">Quero o e-book agora →</a>
+      <ul class="selos">
+        <li>Acesso imediato</li>
+        <li>Pagamento seguro Hotmart</li>
+        <li>7 dias de garantia</li>
+      </ul>
+    </div>
+
+    <!-- Painel animado: de frase literária a página de roteiro -->
+    <aside class="painel" aria-label="Exemplo: a mesma informação escrita como literatura e como roteiro">
+      <div class="painel-cab">
+        <span>INT/EXT. NOITE — de texto a roteiro</span>
+        <span class="rec">REC</span>
+      </div>
+      <div class="barra-tempo" aria-hidden="true"><i id="barra"></i></div>
+      <div class="takes">
+        <div class="take ativo" id="take1">
+          <div class="take-rotulo">
+            <span class="marca-x" aria-hidden="true">✕</span>
+            <b>Take 1 · Frase literária</b>
+            <span class="tipo">Literatura</span>
+          </div>
+          <p class="texto-maquina lit">Quando abriu a porta do apartamento, a chaleira ainda
+          assobiava no fogão — e só então Marta entendeu que não estava sozinha.</p>
+          <p class="take-leg">Bonito de ler, mas ainda é literatura. A câmera não sabe o que mostrar
+          primeiro, nem quanto tempo cada coisa dura.</p>
+        </div>
+        <div class="take" id="take2">
+          <div class="take-rotulo">
+            <span class="marca-ex" aria-hidden="true">!</span>
+            <b>Take 2 · Página de roteiro</b>
+            <span class="tipo">Roteiro</span>
+          </div>
+          <div class="texto-maquina cena">
+            <p class="cab">INT. APARTAMENTO DE MARTA — NOITE</p>
+            <p>MARTA, 40 anos, casaco molhado, gira a chave e empurra a porta com o ombro.</p>
+            <p class="det">DETALHE: no fogão, a chaleira assobia. O vapor sobe.</p>
+            <p>MARTA congela. Os olhos vão até o corredor escuro.</p>
+            <p>Do fim do corredor, o ranger de uma cadeira.</p>
+          </div>
+          <p class="take-leg">A mesma informação, agora filmável: ordem, enquadramento e surpresa.</p>
+        </div>
+      </div>
+      <div class="painel-rodape"><span>Mesma história · Outra escrita</span><span>1 pág = 1 min</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- 2. A DOR -->
+<section class="dor">
+  <div class="wrap estreito">
+    <p class="etiqueta">Você reconhece isso?</p>
+    <h2>Você tem a história.<span class="linha2">Mas ainda não tem o roteiro.</span></h2>
+    <ul class="dor-lista">
+      <li><span>Você sabe no coração como a história funciona,<br>
+        mas está travando diante da enormidade de escrever<br>
+        90 páginas (ou mais!)<br>
+        porque não sabe como planejar o roteiro.</span></li>
+      <li><span>Escreve como se fosse um conto —<br>
+        mas o texto não vira página filmável,<br>
+        continua como literatura.</span></li>
+      <li><span><span class="citacao">"... todo mundo tem um problema no segundo ato..."</span>
+        Ainda não sabe o que precisa descrever<br>
+        na página 10, na página 30 e na página 60.<br>
+        A história perde força no meio ou, pior,<br>
+        está tudo acontecendo rápido demais<br>
+        ou lento demais...</span></li>
+      <li><span>Os diálogos dos seus personagens soam muito parecidos:<br>
+        se trocar uma fala para outro personagem,<br>
+        o leitor não vai perceber...<br>
+        Você precisa de um sistema para acompanhar<br>
+        as cenas e os diálogos ao longo do filme.</span></li>
+      <li><span>Termina o roteiro e não sabe como levar para a próxima etapa:<br>
+        não sabe como apresentar a um produtor, a uma emissora ou a um investidor.</span></li>
+    </ul>
+    <p class="fecho">Nada disso é falta de talento. O que falta é método: medidas para o tempo,<br>
+    um processo de trabalho com ferramentas para cada etapa —<br>
+    desde a primeira ideia às páginas que o produtor vai ler e decidir fazer o filme acontecer.</p>
+  </div>
+</section>
+
+<!-- 3. O QUE VOCÊ LEVA -->
+<section class="leva">
+  <div class="wrap">
+    <p class="etiqueta">O que você leva</p>
+    <h2>Dez teorias, as ferramentas técnicas<span class="linha2">e o caminho até o mercado</span></h2>
+
+    <div class="sumario">
+      <span class="num">Sumário</span>
+      <div class="sumario-imgs">
+        <figure>
+          <img src="assets/p02-indice.jpg" alt="Página 2: índice com as dez teorias e o marketing de filme" data-nome="p02-indice.jpg" loading="lazy" width="441" height="656">
+          <figcaption><b>Página 2</b> · Índice das teorias</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/p03-indice-tecnico.jpg" alt="Página 3: índice técnico com as ferramentas do método" data-nome="p03-indice-tecnico.jpg" loading="lazy" width="441" height="652">
+          <figcaption><b>Página 3</b> · Índice técnico</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="parte">
+      <div class="parte-cab">
+        <span class="num">Parte 1</span>
+        <div>
+          <h3>As dez teorias do roteiro</h3>
+          <p>Os fundamentos, em sequência, com exercícios que vão virando os tijolos da sua própria história.</p>
+        </div>
+      </div>
+      <ol class="itens">
+        <li><h4><span class="n">01</span>Escrever é descrever</h4><p>Por que o roteirista não narra: especifica tamanho, distância, duração e importância de cada elemento.</p></li>
+        <li><h4><span class="n">02</span>A flor na semente</h4><p>Toda história começa com uma necessidade — e se desenvolve em problema, hipóteses e solução.</p></li>
+        <li><h4><span class="n">03</span>Mito e mapa</h4><p>O roteiro como mapa de viagem no tempo, e a estrutura mítica que sustenta os filmes.</p></li>
+        <li><h4><span class="n">04</span>Pesquisa</h4><p>Como a pesquisa transforma uma frase genérica em uma cena específica e crível.</p></li>
+        <li><h4><span class="n">05</span>Jogos de palavras</h4><p>Começo, meio e fim — e o começo, o meio e o fim de cada um deles.</p></li>
+        <li><h4><span class="n">06</span>Trilhos da lógica</h4><p>Conflito como choque de trens: quanto maior a distância, maior o suspense.</p></li>
+        <li><h4><span class="n">07</span>Escrever de trás para frente</h4><p>O clímax primeiro, as razões depois — e o momento do cliffhanger.</p></li>
+        <li><h4><span class="n">08</span>Personagens que envolvem</h4><p>Voz, textura e o método de fichas para acompanhar cada personagem.</p></li>
+        <li><h4><span class="n">09</span>Ouvir a história</h4><p>Como a imagem específica provoca a resposta emocional do espectador.</p></li>
+        <li><h4><span class="n">10</span>Vender o roteiro</h4><p>Como um roteiro vira uma oportunidade<br>para o produtor, para o ator e para um canal de exibição.</p></li>
+      </ol>
+    </div>
+
+    <div class="parte">
+      <div class="parte-cab">
+        <span class="num">Parte 2</span>
+        <div>
+          <h3>As ferramentas técnicas</h3>
+          <p>O índice técnico do livro: tudo o que você consulta na hora de escrever.</p>
+        </div>
+      </div>
+      <ul class="itens">
+        <li><h4>Uma página, um minuto</h4><p>A relação exata entre texto e tempo de tela, e como o volume de texto muda o ritmo da cena.</p></li>
+        <li><h4>Como escrever 90 páginas</h4><p>Escrever muitos textos curtos, colecionar e depois juntar em ordem — em vez de um problemão, muitos probleminhas.</p></li>
+        <li><h4>Energia, direção, velocidade, impacto</h4><p>Quatro medidas para dosar o comportamento de cada personagem em cada momento.</p></li>
+        <li><h4>Método de fichas</h4><p>Necessidade, habilidade, reação, gestos, voz e segredo de cada personagem, em fichas de consulta.</p></li>
+        <li><h4>Squemata</h4><p>O caminho em etapas: ideia, outline de 10 a 15 páginas, mapa de páginas, pré-roteiro e roteiro.</p></li>
+        <li><h4>Fórmula de Hollywood</h4><p>A numeração das páginas de um longa-metragem.</p></li>
+        <li><h4>Formato de página altera narrativa</h4><p>Uma frase literária roteirizada em três versões, do texto fiel à página com enquadramentos.</p></li>
+        <li><h4>36 situações dramáticas</h4><p>A lista clássica de situações para destravar conflitos e variar a trama.</p></li>
+      </ul>
+    </div>
+
+    <div class="parte">
+      <div class="parte-cab">
+        <span class="num">Parte 3</span>
+        <div>
+          <h3>Do roteiro ao mercado</h3>
+          <p>O que acontece depois do "fim": apresentar, negociar e entender quem compra filmes.</p>
+        </div>
+      </div>
+      <ul class="itens">
+        <li><h4>Marketing de cinema</h4><p>Territórios, mercados, festivais e compradores: a lógica comercial do audiovisual, explicada para roteiristas.</p></li>
+      </ul>
+    </div>
+
+    <div class="cta-linha">
+      <a class="btn js-checkout" href="https://pay.hotmart.com/r3241273r">Quero o e-book agora →</a>
+      <small>Acesso imediato após a compra.</small>
+    </div>
+  </div>
+</section>
+
+<!-- 4. POR DENTRO DO E-BOOK -->
+<section class="dentro">
+  <div class="wrap">
+    <p class="etiqueta">Por dentro do e-book</p>
+    <h2>78 páginas ilustradas,<span class="linha2">feitas para consultar enquanto você escreve</span></h2>
+    <p class="estreito" style="margin-top:22px;color:var(--creme-2)">Um guia para ler mais de uma vez e guardar.<br>
+    Cada ferramenta explicada com diagramas,<br>
+    tabelas e exemplos — para melhorar o seu roteiro.</p>
+
+    <div class="galeria">
+      <figure>
+        <img src="assets/01-capa.jpg" alt="Capa do e-book Roteiro de Roteiro 3.8e Premium Edition" data-nome="01-capa.jpg" loading="lazy" width="640" height="905">
+        <figcaption><b>Capa</b> · Roteiro de Roteiro 3.8e · Premium Edition</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p05-uma-pagina-um-minuto.jpg" alt="Página 5: uma página de roteiro equivale a um minuto de filme, com exemplo cronometrado" data-nome="p05-uma-pagina-um-minuto.jpg" loading="lazy">
+        <figcaption><b>Página 5</b> · Uma página = um minuto</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p23-inicio-meio-fim.jpg" alt="Página 23: garrafa com mensagem e diagrama de início, meio e fim" data-nome="p23-inicio-meio-fim.jpg" loading="lazy">
+        <figcaption><b>Página 23</b> · Início, meio e fim</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p25-roteiro-e-mapa.jpg" alt="Página 25: roteiros comparados a mapas de viagem e plantas de construção" data-nome="p25-roteiro-e-mapa.jpg" loading="lazy">
+        <figcaption><b>Página 25</b> · Roteiro é mapa de viagem no tempo</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p06-final-feliz.jpg" alt="Página 6: citação sobre o que o mercado espera de um filme, com ilustração de trens" data-nome="p06-final-feliz.jpg" loading="lazy">
+        <figcaption><b>Página 6</b> · O que o mercado espera de um filme</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p57-squemata.jpg" alt="Página 57: fluxograma do processo, da necessidade ao roteiro final" data-nome="p57-squemata.jpg" loading="lazy">
+        <figcaption><b>Página 57</b> · Squemata: o processo inteiro em um diagrama</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/p67-kit-de-roteiro.jpg" alt="Página 67: kit de roteiro com frase quente, capa, parágrafo fervendo e primeira página" data-nome="p67-kit-de-roteiro.jpg" loading="lazy">
+        <figcaption><b>Página 67</b> · Kit de roteiro para apresentar ao produtor</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/v32-formato-pagina.jpg" alt="Edição impressa v3.2: diagrama do formato da página de roteiro, com cabeçalho, personagem, diálogo e descrição" data-nome="v32-formato-pagina.jpg" loading="lazy">
+        <figcaption><b>Edição impressa v3.2</b> · O formato da página de roteiro</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PARA QUEM É -->
+<section class="quem">
+  <div class="wrap duas">
+    <div class="coluna sim">
+      <h3>É para você se</h3>
+      <ul>
+        <li>Você quer escrever roteiros para cinema, séries de TV ou animação.</li>
+        <li>Você tem uma história inteira na cabeça, mas não sabe como distribuí-la em páginas.</li>
+        <li>Você já escreve e quer ferramentas de consulta: fichas, fórmula, formatação e kit de venda.</li>
+        <li>Você quer entender como o mercado lê, avalia e compra um roteiro.</li>
+      </ul>
+    </div>
+    <div class="coluna nao">
+      <h3>Não é para você se</h3>
+      <ul>
+        <li>Você procura um curso em vídeo com acompanhamento individual.</li>
+        <li>Você espera que o livro escreva a história por você, sem exercícios.</li>
+        <li>Você não pretende escrever nenhuma página depois de ler.</li>
+        <li><span>Você quer começar por uma única cena curta, a partir de uma lembrança pessoal —<br>para isso existe o <a class="link-livro" href="/roteirodeumalembranca">Roteiro de uma Lembrança</a>.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 6. A OFERTA -->
+<section class="oferta" id="oferta">
+  <div class="wrap grade">
+    <div class="caixa-preco">
+      <p class="etiqueta">Roteiro de Roteiro 3.8e · Premium Edition</p>
+      <p class="preco">R$ 18</p>
+      <p class="preco-sub">pagamento único · acesso imediato</p>
+      <ul class="incluso">
+        <li>As dez teorias do roteiro, com exercícios de escrita</li>
+        <li>Uma página, um minuto: a medida de tempo do roteiro</li>
+        <li>O método de fichas de personagem</li>
+        <li>O squemata: da ideia ao outline, ao pré-roteiro e ao roteiro</li>
+        <li>A fórmula de Hollywood, página a página</li>
+        <li>Formatação de página de roteiro, com exemplo em três versões</li>
+        <li>As 36 situações dramáticas</li>
+        <li>O kit de roteiro para apresentar ao mercado</li>
+        <li>O artigo Marketing de Cinema, atualizado</li>
+      </ul>
+      <a class="btn js-checkout" href="https://pay.hotmart.com/r3241273r">Comprar agora →</a>
+      <ul class="selos">
+        <li>Acesso imediato</li>
+        <li>Compra segura Hotmart</li>
+      </ul>
+    </div>
+    <div class="garantia">
+      <div class="selo-garantia"><div><b>7</b><small>dias de<br>garantia</small></div></div>
+      <h3 style="margin-bottom:14px">Risco zero.</h3>
+      <p>Se em até 7 dias você achar que o e-book não é para você, é só pedir o reembolso pela
+      Hotmart e receber 100% do valor de volta. <strong>Sem pergunta nenhuma.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. PERGUNTAS FREQUENTES -->
+<section class="perguntas">
+  <div class="wrap estreito">
+    <p class="etiqueta">Perguntas frequentes</p>
+    <h2>Antes de decidir</h2>
+    <div class="faq">
+      <details>
+        <summary>Preciso já ser roteirista profissional?</summary>
+        <p>Não. O método começa pela ideia solta e pelos primeiros exercícios de escrita, e avança
+        até o roteiro formatado. Quem já escreve encontra ferramentas de consulta para cada etapa.</p>
+      </details>
+      <details>
+        <summary>Serve para séries, animação e outros formatos?</summary>
+        <p>Sim. O livro foi escrito para cinema, séries de TV e animação: a medida de uma página
+        por minuto, as fichas de personagem e a lógica do cliffhanger valem para todos esses formatos.</p>
+      </details>
+      <details>
+        <summary>Qual a diferença para o Roteiro de uma Lembrança?</summary>
+        <p>O Roteiro de uma Lembrança treina uma única cena de um minuto, a partir de uma memória pessoal.
+        O Roteiro de Roteiro é o método completo: estrutura de longa-metragem, personagens,
+        formatação e apresentação ao mercado. Os dois se complementam.</p>
+      </details>
+      <details>
+        <summary>Como recebo o material?</summary>
+        <p>Assim que o pagamento é confirmado, a Hotmart libera o acesso e envia o link por e-mail.
+        É um e-book em PDF de 78 páginas, para ler no computador, no tablet ou no celular.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. QUEM ESCREVEU -->
+<section class="autor">
+  <div class="wrap grade">
+    <figure>
+      <img src="assets/06-autor-romanbruni.jpg" alt="Ilustração de RomanBRuni: retrato em traço sobre papel de prancheta, com óculos escuros turquesa" data-nome="06-autor-romanbruni.jpg" loading="lazy">
+      <figcaption>RomanBRuni</figcaption>
+    </figure>
+    <div class="corpo">
+      <p class="etiqueta">Quem escreveu</p>
+      <h2>com RomanBRuni</h2>
+      <p class="sub">Desenvolvimento de roteiro<br>para cinema, séries, animação e games.</p>
+      <p>RomanBRuni é o amigo que os roteiristas chamam para fazer os roteiros ficarem mais fortes.<br>
+      Consultor de desenvolvimento de roteiro, criou o Roteiro de Roteiro como uma receita de trabalho:<br>
+      aplicar medidas, proporções e durações à escrita, como se fosse uma engenharia do roteiro.</p>
+      <p><em>Roteiro de Roteiro</em> chega à versão 3.8, na quarta edição.<br>
+      O livro reúne a fórmula de Hollywood, uma página um minuto, o método de fichas de personagem<br>
+      e o marketing de cinema — tema de um artigo do autor publicado originalmente na Gazeta Mercantil<br>
+      e atualizado para esta quarta edição em PDF.</p>
+      <a class="site" href="https://www.romanbruni.net">www.RomanBRuni.net</a><br>
+      <a class="btn js-checkout" href="https://pay.hotmart.com/r3241273r">Quero o e-book →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CHAMADA FINAL -->
+<section class="final">
+  <div class="wrap">
+    <h2>Sua história já é interessante, fascinante:<br>tem começo, meio e fim.</h2>
+    <p>Mas, para sua narrativa se transformar em roteiro,<br>
+    use as técnicas e os mapas do Roteiro de Roteiro 3.8<br>
+    para fazer o filme acontecer!</p>
+    <a class="btn js-checkout" href="https://pay.hotmart.com/r3241273r">Garantir meu e-book →</a>
+    <ul class="selos">
+      <li>Acesso imediato</li>
+      <li>Compra segura Hotmart</li>
+      <li>7 dias de garantia</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <blockquote>"Roteiro é mapa. Não do território — do tempo."</blockquote>
+    <p class="areas">Desenvolvimento de roteiro · Cinema · Séries · Animação · Games</p>
+    <a href="https://www.romanbruni.net">← Voltar para RomanBRuni.net</a>
+  </div>
+</footer>
+
+<div class="barra-celular">
+  <span>Roteiro de Roteiro 3.8e</span>
+  <a class="btn btn-pequeno js-checkout" href="https://pay.hotmart.com/r3241273r">Quero o e-book →</a>
+</div>
+
+<script>
+/* Imagem ausente: mostra moldura com o nome esperado */
+document.querySelectorAll('img[data-nome]').forEach(function (img) {
+  function trocar() {
+    var d = document.createElement('div');
+    d.className = 'falta-img';
+    d.setAttribute('role', 'img');
+    d.setAttribute('aria-label', img.alt);
+    d.textContent = 'assets/' + img.dataset.nome;
+    img.replaceWith(d);
+  }
+  if (img.complete && img.naturalWidth === 0) trocar();
+  else img.addEventListener('error', trocar);
+});
+
+/* Painel animado: 8 s no take 1, 18 s no take 2 */
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var t1 = document.getElementById('take1');
+  var t2 = document.getElementById('take2');
+  var barra = document.getElementById('barra');
+  var tempos = [8000, 18000];
+  var atual = 0;
+  function mostrar(i) {
+    t1.classList.toggle('ativo', i === 0);
+    t2.classList.toggle('ativo', i === 1);
+    barra.style.transition = 'none';
+    barra.style.width = '0';
+    void barra.offsetWidth;
+    barra.style.transition = 'width ' + tempos[i] + 'ms linear';
+    barra.style.width = '100%';
+    setTimeout(function () { atual = 1 - atual; mostrar(atual); }, tempos[i]);
+  }
+  mostrar(0);
+})();
+</script>
+</body>
+</html>
